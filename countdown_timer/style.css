@@ -31,6 +31,9 @@ body {
 
 .countdown-container {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -38,7 +41,8 @@ body {
     font-weight: bold;
     font-size: 2rem;
     line-height: 1;
-    margin: 0 2rem;
+    margin: 1rem 2rem;
+
 }
 
 .countdown-el {
