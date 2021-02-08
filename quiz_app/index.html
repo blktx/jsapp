@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown-</title>
+    <title>Quiz</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,6 +13,8 @@
 
 
     <link rel="stylesheet" href="style.css">
+
+
 
 </head>
 
@@ -24,7 +26,7 @@
                     <a class="text-muted" href="#">雅儀 (Ya-I)</a>
                 </div>
                 <div class="col-4 text-center">
-                    <a class="blog-header-logo text-dark" href="#">Countdown Timer Application</a>
+                    <a class="blog-header-logo text-dark" href="#">Quiz Application</a>
                 </div>
                 <div class="col-4 d-flex justify-content-end align-items-center">
                     <a class="text-muted" href="#">
@@ -41,36 +43,32 @@
             </div>
         </header>
 
-        <div class="main-content">
-            <h1>My birthday is after</h1>
+        <div class="quiz-container">
+            <div class="quiz-header">
+                <h2 id=question>Question text</h2>
+                <ul>
+                    <li>
+                        <input type="radio" id="a" name="answer" />
+                        <label id="a_text" for=""> Question</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="b" name="answer" />
+                        <label id="b_text" for=""> Question</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="c" name="answer" />
+                        <label id="c_text" for=""> Question</label>
+                    </li>
+                </ul>
 
-            <div class="countdown-container">
-                <div class="countdown-el days-c">
-                    <p class="big-text" id="days">0</p>
-                    <span>days</span>
-                </div>
+                <button class="click">Submit</button>
 
-                <div class="countdown-el hours-c">
-                    <p class="big-text" id="hours">0</p>
-                    <span>hours</span>
-                </div>
-
-                <div class="countdown-el mins-c">
-                    <p class="big-text" id="mins">0</p>
-                    <span>minutes</span>
-                </div>
-
-                <div class="countdown-el seconds-c">
-                    <p class="big-text" id="secs">0</p>
-                    <span>seconds</span>
-                </div>
             </div>
+
+
         </div>
 
-
-
         <script src="script.js"></script>
-
 
 
 </body>
