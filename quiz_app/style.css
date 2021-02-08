@@ -11,7 +11,10 @@ body {
 }
 
 h2 {
+    padding: 1;
     margin: 0;
+    text-align: center;
+    font-size: 1.5rem;
  
 
 }
@@ -51,6 +54,7 @@ h2 {
 
 
 ul li {
+    cursor: pointer;
     font-size: 1.2rem;
     margin: 1rem 0;
 }
@@ -69,4 +73,9 @@ button {
 
 button:hover {
     background-color:cornflowerblue;
+}
+
+button:focus {
+    background-color: antiquewhite;
+    outline: none;
 }
