@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Say Cheese!</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <main class="blog-header py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                    <a class="text-muted" href="#">雅儀 (Ya-I)</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-dark" href="#">My Recipe Application</a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a class="text-muted" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img"
+                            viewBox="0 0 24 24" focusable="false">
+                            <title>Search</title>
+                            <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                            <path d="M21 21l-5.2-5.2"></path>
+                        </svg>
+                    </a>
+                    <a class="btn btn-sm btn-outline-secondary" href="../index.html">Home</a>
+                </div>
+            </div>
+        </main>
+
+
+
+        <div class="mobile-container">
+
+            <header>
+                <input type="text">
+                <button id="search"><i class="fas fa-search"></i></button>
+            </header>
+
+
+
+
+            <div class="fav-container">
+                <h3>Favorite Meals</h3>
+                <ul class="fav-meals">
+                    <li><img src="static/1.jpg" alt=""><span>Cauliflower cheese</span></li>
+                    <li><img src="static/2.jpg" alt=""><span>Cheese Eggs</span></li>
+                    <li><img src="static/3.jpg" alt=""><span>Cheese Stick</span></li>
+                    <li><img src="static/4.jpg" alt=""><span>French Cheese</span></li>
+                    <li><img src="static/5.jpg" alt=""><span>Cheese Platter</span></li>
+
+                </ul>
+            </div>
+
+
+            <div class="meals">
+
+                <div class="meal">
+                    <div class="meal-header">
+                        <span class="random">
+                            Random Recipe
+                        </span>
+                        <img src="https://www.themealdb.com//images//media//meals//wqqvyq1511179730.jpg" alt="">
+                    </div>
+                    <div class="meal-body">
+                        <h4>Food discription</h4>
+                        <button class="fav-btn">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+
+
+</body>
+
+</html>
