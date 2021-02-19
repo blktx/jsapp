@@ -132,10 +132,9 @@ async function fetchFavMeals() {
 }
 
 function addMealFav(mealData) {
-
-
-
     const favMeal = document.createElement('li');
+
+
 
     favMeal.innerHTML = `
     <li>
@@ -170,21 +169,42 @@ function showMealInfo(mealData) {
     // update the Meal Info
     const mealEl = document.createElement('div');
 
+    // get ingredients and measures
+
+    const ingredients = [];
+
+
+    for (let i = 1; i <= 20; i++) {
+        if (mealData["strIngredient" + i]) {
+            ingredients.push(
+                `${mealData["strIngredient" + i]} - ${mealData["strMeasure" + i]
+                }`
+            );
+        } else {
+            break;
+        }
+    }
+
+
+
+
     mealEl.innerHTML = `
 
-                        </button>
                         <h5>${mealData.strMeal}</h5>
                         <img src="${mealData.strMealThumb}" alt="${mealData.strMeal}" />
 
 
-                        <div>
+                        
                             <p>${mealData.strInstructions}</p>
-                           
+                            <h6>Ingredients:</h6>
+                            <ul>
+                            ${ingredients.map((ing) => `
+                            <li>${ing}</li>
+                            `).join('')}
+                            </ul >
+                            
 
-                        </div>
-    
-    
-    `;
+        `;
 
 
     mealInfoEl.appendChild(mealEl);
