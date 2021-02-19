@@ -49,7 +49,7 @@
         <div class="mobile-container">
 
             <header>
-                <input type="text">
+                <input type="text" id="search-term" />
                 <button id="search"><i class="fas fa-search"></i></button>
             </header>
 
@@ -58,38 +58,34 @@
 
             <div class="fav-container">
                 <h3>Favorite Meals</h3>
-                <ul class="fav-meals">
-                    <li><img src="static/1.jpg" alt=""><span>Cauliflower cheese</span></li>
-                    <li><img src="static/2.jpg" alt=""><span>Cheese Eggs</span></li>
-                    <!-- <li><img src="static/3.jpg" alt=""><span>Cheese Stick</span></li> -->
-                    <!-- <li><img src="static/4.jpg" alt=""><span>French Cheese</span></li> -->
-                    <li><img src="static/5.jpg" alt=""><span>Cheese Platter</span></li>
+                <ul class="fav-meals" id="fav-meals">
 
                 </ul>
             </div>
 
 
-            <div class="meals">
+            <div class="meals" id="meals"> </div>
 
-                <div class="meal">
-                    <div class="meal-header">
-                        <span class="random">
-                            Random Recipe
-                        </span>
-                        <img src="https://www.themealdb.com//images//media//meals//wqqvyq1511179730.jpg" alt="">
+            <div class="popup-container hidden " id="meal-popup">
+
+                <div class="popup">
+                    <button id="close-popup" class="close-popup"><i class="fas fa-times-circle"></i>
+
+                    </button>
+                    <div class="meal-info" id="meal-info">
+
+
                     </div>
-                    <div class="meal-body">
-                        <h4>Food discription</h4>
-                        <button class="fav-btn">
-                            <i class="fas fa-heart"></i>
-                        </button>
-                    </div>
+
+
+
                 </div>
+
             </div>
-        </div>
 
 
-        <script src="script.js"></script>
+
+            <script src="script.js"></script>
 
 
 </body>
